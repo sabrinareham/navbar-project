@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY NAV BAR PAGE</title>
+</head>
+
+
+<style>
+    *{
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;  
+        list-style: none;  
+        font-family: Arial, Helvetica, sans-serif; 
+        border-style: none;
+        /* color: white; */
+        
+        /* background-color: cornflowerblue; */
+    }
+
+    nav{
+        /* border: 1px solid black; */
+        height: auto ; width: 100%; 
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px 10px 10px;
+        background-color: skyblue;
+        /* color: white; */
+
+        
+    }
+    .logo{
+
+        margin-top: 30px;  margin-bottom: 30px;
+         color: white; 
+         font-size: 30px; font-weight: 500;
+         text-transform: uppercase;
+        
+
+    }
+
+    ul{
+        display: flex;
+        /* justify-content: space-between; */
+        /* margin-left: 10px; */
+    }
+   ul li {  
+        margin-left: 30px;
+        padding-top: 30px; padding-bottom: 30px;
+        font-size: 20px; font-size: 400;
+        color: white;
+        /* border: 1px solid black; */
+    }
+
+    li a {
+        color: white;
+
+    }
+
+
+   
+
+    button{
+
+         /* margin-left: 20px; margin-right: 0; */
+         padding-top:10px; padding-bottom: 10px;
+         padding-left: 20px; padding-right: 20px;
+
+         margin-top: 10px; margin-bottom: 10px;
+         border-radius: 80%;
+         /* gap: 15px; */
+         border-style : none ;
+         background-color: black; color: white;
+
+    }
+
+    .buttondiv{
+        display: flex;
+        gap: 6px;
+        margin-top: 20px;  margin-bottom: 30px;
+        margin-left: 20px;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+        /* padding-top: 30px; padding-bottom: 30px; */
+
+    }
+
+    .A{
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 600px;
+        background-color: pink;
+        gap: 5px;
+        /* margin-left: 20px; */
+        
+    }
+
+    .B {
+         /* border: 2px dashed black; */
+         margin-top: 200px; margin-bottom: 400px;
+         margin-left: 40px; margin-right: 10px;
+         padding: 20px 20px 20px 20px;
+        height: 200px; width: 200px;
+        height: fit-content; 
+        font-size: 14px; font-style: oblique; font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300px;
+        color: black;
+        background-color: darkgray;
+
+
+    }
+
+    .C {
+
+        /* border: 2px dashed black; */
+         margin-top: 200px; margin-bottom: 400px;
+         margin-left: 40px; margin-right: 10px;
+         height: 200px; width: 200px;
+         height: fit-content; 
+         padding: 20px 20px 20px 20px;
+
+         font-size: 14px; font-style: oblique; font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300px;
+        color: black;
+        background-color: darkgray;
+
+    }
+
+    .D {
+
+        /* border: 2px dashed black; */
+         margin-top: 200px; margin-bottom: 400px;
+         margin-left: 40px; margin-right: 10px;
+        height: 200px; width: 200px;
+        height: fit-content;
+        padding: 20px 20px 20px 20px;
+        font-size: 14px; font-style: oblique; font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300px;
+        color: black;
+        background-color: darkgray;
+
+    }
+
+    a {
+
+    }
+
+    P{
+
+    }
+
+    p h4 {
+        color: black;
+        font-style: normal;
+        /* font-size: 18px; */
+        font-weight: normal;
+        text-align: justify;
+        
+    }
+
+    .E {
+             font-size: 30px;
+             margin-left: 500px; 
+             margin-right:600px ;
+             /* border: 1px solid red; */
+             gap: 40px;
+             display: inline-flex;
+             margin-top: 10px;
+             padding: 2px 2px 2px 2px;
+             justify-content: center;
+             align-items: center;
+
+            }
+
+    .slider{
+        /* border: 1px solid black; */
+        height: 100px; width:auto;
+        margin-top: 20px; margin-bottom: 20px ; margin-left: 100px; margin-right: 100px;
+        background-color: lightskyblue;
+        padding-top: 250px; padding-bottom: 250px;
+        background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/241137-825-auto?width=825&height=auto&aspect=true");
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation-name: Myanimation;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        background-size: cover;
+    }
+
+    @keyframes Myanimation{
+        0% { background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/241137-825-auto?width=825&height=auto&aspect=true");}
+        30% { background-image: url("https://img.magnific.com/free-photo/spring-photograph-with-beautiful-flowers_23-2151946221.jpg?w=360");}
+        60% { background-image: url("https://thumbs.dreamstime.com/b/purple-flowers-bloom-vibrant-field-sunset-spring-flourish-as-sun-sets-casting-warm-glow-their-delicate-petals-394609038.jpg");}
+       
+        100% {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSysRh-aMP1_sxPdFbZC7yE4LaMHpljrdblMQjmIOizfa8yi4JkX2qh-W&s=10");}
+    }
+
+
+</style>
+
+
+<body>
+
+    <nav>
+        
+        <a href="#" class="logo">Nav Bar</a>
+    
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="buttondiv">
+        <Button type="button">Sign in</Button>
+        <Button type="button">Sign up</Button>
+        </div>
+
+
+    </nav>
+
+    <main>
+        <div class="A">
+
+            <div class="B">
+                <a href="https://www.google.com/search?sca_esv=b25d32625954c6d5&rlz=1C1VDKB_en-GBPK1172PK1173&sxsrf=APpeQnvQS0qousYTt57ZSrq87cu7KZoX4w:1790924773060&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&q=flower&sa=X&ved=2ahUKEwj-vqrX4pqXAxWYUaQEHeKbGwAQtKgLegQIGhAB&biw=1366&bih=607&dpr=1">
+                 <br>
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd1ecxdO92HxbgngqNxlcQpJvH2vxHelObNlGvnQgqcCdtcqAUWKatBFw&s=10" 
+                 alt="drma" 
+                 height="100px " width="100px"> 
+                 <br>
+                 <h6>Purple<h6>
+            </a>
+            <br>
+            <br>
+            <section>
+                <p>
+                    <H2>EXPLANATION</H2>
+                    <br>
+                    <hr>
+                    <h4>
+                    Purple flowers symbolize beauty, elegance, mystery, and grace.
+                    Their soft colors bring a peaceful and charming feeling to every garden.
+                    </h4>
+                    <br>
+                </p>
+            </section>
+            </div>
+
+
+            <div class="C">
+
+                <a href="https://www.google.com/search?sca_esv=b25d32625954c6d5&rlz=1C1VDKB_en-GBPK1172PK1173&sxsrf=APpeQnvQS0qousYTt57ZSrq87cu7KZoX4w:1790924773060&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&q=flower&sa=X&ved=2ahUKEwj-vqrX4pqXAxWYUaQEHeKbGwAQtKgLegQIGhAB&biw=1366&bih=607&dpr=1">
+                 <br>
+                 <img src="https://i.pinimg.com/474x/3c/93/63/3c936320edcee56785dd963ba15e464f.jpg" 
+                 alt="drma" 
+                 height="100px " width="100px"> 
+                 <br>
+                 <h6>BLUE<h6>
+            </a>
+            <br>
+            <br>
+            <section>
+                <p>
+                    <H2>EXPLANATION</H2>
+                    <br>
+                    <hr>
+                    <h4>
+                    Blue flowers symbolize beauty, elegance, mystery, and grace.
+                    Their soft colors bring a peaceful and charming feeling to every garden.
+                    <br>
+                    </h4>
+                </p>
+            </section>
+
+            
+            </div>
+
+
+            <div class="D">
+
+                <a href="https://www.google.com/search?sca_esv=b25d32625954c6d5&rlz=1C1VDKB_en-GBPK1172PK1173&sxsrf=APpeQnvQS0qousYTt57ZSrq87cu7KZoX4w:1790924773060&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&q=flower&sa=X&ved=2ahUKEwj-vqrX4pqXAxWYUaQEHeKbGwAQtKgLegQIGhAB&biw=1366&bih=607&dpr=1">
+                 <br>
+                 <img src="https://media.flyingflowers.co.uk/i/flyingflowers/ff_red_tulips?$poi-square$&crop=poi&fmt=auto&qlt=default&h=804px&aspect=1%3A1.jpg" 
+                 alt="drma" 
+                 height="100px " width="100px"> 
+                 <br>
+                 <h6>Red<h6>
+            </a>
+            <section>
+                <br>
+                <br>
+                <p>
+                    <H2>EXPLANATION</H2>
+                    <br>
+                    <hr>
+                    <h4>
+                    Red flowers symbolize beauty, elegance, mystery, and grace.
+                    Their soft colors bring a peaceful and charming feeling to every garden.
+                    <br>
+                    </h4>
+                </p>
+            </section>
+
+
+            </div>
+
+
+             <div class="slider">
+
+             </div>
+
+        </div>
+
+        <div class="slider">
+
+        </div>
+
+    </main>
+
+     
+    
+    <footer>
+        <div class="E">
+
+    <a href="https://www.google.com/search?q=instagram&rlz=1C1VDKB_en-GBPK1172PK1173&oq=insta&gs_lcrp=EgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIHCAMQABiPAtIBCDUxNTFqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0IUq-_aFdPDjxgvaB5zvAWVDjnY8StWH45pP9v4VlOcjShcOrW9gagyU&s=10" width="30">
+    </a>
+
+    <a href="https://www.google.com/search?q=facebook&sca_esv=e1de76b764c5d6d7&rlz=1C1VDKB_en-GBPK1172PK1173&udm=2&biw=1366&bih=607&sxsrf=APpeQnuwhDcrbWCgjgzuhyUZtIq1_-IKsQ%3A1790931024001&ei=T3C_ap_SPLOokdUPw9DgwAk&oq=fa&gs_lp=Egtnd3Mtd2l6LWltZyICZmEqEAgAGIAEGIoFGEMYsQMYgwEyEBAAGIAEGIoFGEMYsQMYgwEyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyDRAAGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGENIxB5QoANY9hBwAngAkAEEmAGSAqAByQyqAQMyLTe4AQHIAQD4AQGYAgWgAscFqAIKwgIHECMYyQIYJ8ICBhAAGAcYHsICChAjGMkCGOoCGCfCAgUQABiABMICCBAAGIAEGLEDmAMMiAYBkgcFMi4wLjOgB5gosgcDMi0zuAenBcIHAzMtNcgHMoAIAQ&sclient=gws-wiz-img">
+        <img src="https://play-lh.googleusercontent.com/12KEJDhgk6oyE1VgmfCuFzFrQripZ_endElbvEhU1rZawQgV3RI-v3II8fDslI1sdC_WKBkmtxS3jxuIihk33Q" width="30">
+    </a>
+
+    <a href="https://www.google.com/search?q=whatsapp&sca_esv=e1de76b764c5d6d7&rlz=1C1VDKB_en-GBPK1172PK1173&udm=2&biw=1366&bih=607&sxsrf=APpeQnuJFGFiGQc5-aAuTY5TqXNz136rEg%3A1790931070961&ei=fnC_aqmbOu2GkdUPr--k6Qw&oq=wh&gs_lp=Egtnd3Mtd2l6LWltZyICd2gqEAgAGIAEGIoFGEMYsQMYgwEyEBAAGIAEGIoFGEMYsQMYgwEyChAAGIAEGIoFGEMyDRAAGIAEGIoFGEMYsQMyDRAAGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyDRAAGIAEGIoFGEMYsQMyEBAAGIAEGIoFGEMYsQMYgwEyChAAGIAEGIoFGENI6SBQ6QJY_hBwAngAkAEEmAGwAqABpg2qAQUyLTYuMbgBAcgBAPgBAZgCBaAC-AaoAgrCAgcQIxjJAhgnwgIGEAAYBxgewgIIEAAYgAQYsQPCAgoQIxjJAhjqAhgnwgIFEAAYgASYAwqIBgGSBwcyLjAuMi4xoAeMKrIHBTItMi4xuAfjBsIHBTItMy4yyAcogAgB&sclient=gws-wiz-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl-1sxBe41lMDgiTZzstjrE2i0q5OcyqhLaLgOuYJvwA&s" width="30">
+    </a>
+
+    </div>
+
+    </footer>
+     
+    
+    
+</body>
+</html>
