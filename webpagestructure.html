@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Structure</title>
+
+    <style>
+        *{
+
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;  
+        list-style: none;  
+        font-family: Arial, Helvetica, sans-serif; 
+        border-style: none; 
+        color: white; 
+        background-color: lightpink;
+
+        }
+
+
+         nav table{
+            /* border: 1px solid black; */
+            justify-content: space-between;
+            margin-left: 10px; margin-right: 10px;
+
+        }
+       td {
+           /* border: 2px dashed black; */
+           padding-left:65px ; padding-right:65px ;
+           padding-top: 10px; padding-bottom: 10px;
+           justify-content: space-between;
+        }
+
+        td a {
+            color: black;
+            font-weight:100px ; font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        nav{
+
+         /* border: 1px solid black;  */
+         width: 100%; 
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px 10px 10px;
+        /* background-color: skyblue; */
+        /* color: white; */
+
+        }
+
+        .Banner{
+            /* border: 1px solid black;
+            background-color: lightgreen; */
+            /* margin-left: 10px; margin-right: 10px; */
+            padding: 150px 150px 150px 150px;
+
+        }
+
+        .About{
+            /* border: 2px solid black; */
+            width: 100%; height: 400px;
+            /* background-color: lightgreen; */
+            display: flex;
+            justify-content: space-between;
+            
+        } 
+
+
+        .A{
+            height: 200px; width: 40%;
+            /* border: 1px solid black;
+            background-color: grey; */
+            margin-top: 100px; margin-bottom: 100px;
+            height: fit-content;
+            text-align: justify;
+            padding-left: 20px; padding-right:20px ;
+            padding-top: 40px; padding-bottom: 40px;
+            
+
+        }
+
+        .B{
+            height: 200px; width: 40%;
+            /* border: 1px solid black;
+            background-color: grey; */
+            margin-top: 100px; margin-bottom: 100px;
+            padding-left: 20px; padding-right: 20px;    
+
+        }
+        .C{
+            /* border: 2px solid black; */
+            height: 400px; width: 100%;
+            /* align-items: center; */
+            justify-content: center;
+           
+        }
+
+        #a {
+
+            margin-top: 150px; margin-bottom: 150px;
+            margin-left: 250px;
+            
+        }
+
+        #a td{
+
+            padding-left: 200px; padding-right: 200px;
+            padding-top: 20px; padding-bottom: 20px;
+        }
+
+        .D{
+
+            /* border: 2px solid black; */
+            height: 400px; width: 100%;
+            justify-content: center;
+
+        }
+
+
+        #b{
+            margin-top: 90px; margin-bottom: 90px;
+            margin-left: 250px;
+        
+        }
+
+
+        #b tr:first-child td{
+            /* background-color: lightsteelblue; */
+            padding-left: 77px; padding-right: 77px;
+            padding-top: 20px; padding-bottom: 20px;
+            align-items: center;
+            
+        }
+         #b tr:nth-child(2) td{
+            padding-top: 30px; padding-bottom: 30px;
+        }
+
+
+        #b tr:nth-child(3) td{
+            padding-top: 30px; padding-bottom: 30px;
+        }
+
+         #b tr:nth-child(4) td{
+            padding-top: 30px; padding-bottom: 30px;
+        }
+
+         #b tr:nth-child(5) td{
+            padding-top: 30px; padding-bottom: 30px;
+        }
+
+        .G{
+            /* border: 2px solid black; background-color: lightgray; */
+            height: 400px; width: 50%;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 25%;
+            
+        }
+        #s{
+            margin-top: 100px; margin-bottom: 100px;
+            /* border: 1px dashed black;
+            background-color: cadetblue; */
+            height: fit-content;
+            padding: 50px 50px 50px 50px;
+        }
+
+        #h{
+            margin-top: 100px; margin-bottom: 100px;
+            /* border: 1px dashed black;
+            background-color: cadetblue; */
+            height: fit-content;
+            padding: 50px 50px 50px 50px;
+        }
+
+        .H{
+            font-size: 30px;
+             margin-left: 43%; 
+             margin-right: ;
+             border: 1px solid black;
+             gap: 40px;
+             display: inline-flex;
+             margin-top: 10px; 
+             padding: 2px 2px 2px 2px;
+             justify-content: center;
+             align-items: center;
+        }
+
+
+
+
+        
+       
+
+    </style>
+</head>
+<body>
+    <main>
+        <center><h1>Navbar</h1></center>
+        <hr>
+        <nav>
+        <table>
+            <tr>
+                
+                <td> <a href="#" >Logo</a></td>
+                <td> <a href="#" >Empty</a></td>
+                <td> <a href="#" >Home</a></td>
+                <td> <a href="#" >About Us</a></td>
+                <td> <a href="#" >Search</a></td>
+                <td> <a href="#" >contact</a></td>
+                <td> <a href="#" >Disclaimer</a></td>
+                
+                
+            </tr>
+        </table>
+        </nav>
+     <br>
+        <section>
+            <div class="Banner">
+                 <center>  <h2>Banner</h2> </center>
+                 
+            </div>
+
+        </section>
+
+        <section>
+             <center><h1>About Us</h1></center>
+            <div class="About">
+                
+                <div class="A">
+                    <p>
+                       <center><h4>ABOUT YOURSELF</h4></center> 
+                       <br>
+                        You
+                        re looking for opportunities where you can grow as an AI Engineer, gain real experience, and build a stronger professional profile.
+                        🇺🇸 Your longer-term academic goal has been pursuing an MS in the USA, particularly looking into AI/CS-related programs and funding opportunities.
+                        You prefer learning in a very practical way: simple English, Roman Urdu, real-life examples, diagrams, and step-by-step explanations rather than complicated textbook language.
+                    </p>
+
+                </div>
+                <div class="B">
+                    <br>
+                    <br>
+                    <center><h4>IMAGE</h4></center>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <br>
+            <center><h1>Services</h1></center>
+            
+            <div class="C">
+                <table id="a">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </div>
+        </section>
+        <br>
+
+
+    <section>
+
+        <br>
+            <center><h1>Portfolio</h1></center>
+            
+            <div class="D">
+                <table id="b">
+                    <tr>
+                        <td><b>Web</b></td>
+                        <td><b>Graphic</b></td>
+                        <td><b>SEO</b></td>
+                        <td><b>Gen AI</b></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4"></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"></td>
+                        <td colspan="2"></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"></td>
+                        <td colspan="2"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+    </section>
+
+    
+    <section>
+<br>
+        <center><h1>Contacts</h1></center>
+        <br>
+        <div class="G">
+            <div id="s">
+                <p>
+                    <br>
+                    0232577722
+                    <br>
+                    23236376310
+                    <br>
+                    9328t813926
+                    <br>
+                    82367810391
+                </p>
+
+            </div>
+
+            <div id="h">
+
+                <p>
+                    <br>
+                    0232577722
+                    <br>
+                    23236376310
+                    <br>
+                    9328t813926
+                    <br>
+                    82367810391
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+         <footer>
+
+            <br>
+            <br>
+            <br>
+            <center><h1>Footer</h1></center>
+            <br>
+        <div class="H">
+
+
+    <a href="https://www.google.com/search?q=instagram&rlz=1C1VDKB_en-GBPK1172PK1173&oq=insta&gs_lcrp=EgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIHCAMQABiPAtIBCDUxNTFqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0IUq-_aFdPDjxgvaB5zvAWVDjnY8StWH45pP9v4VlOcjShcOrW9gagyU&s=10" width="30">
+    </a>
+
+    <a href="https://www.google.com/search?q=facebook&sca_esv=e1de76b764c5d6d7&rlz=1C1VDKB_en-GBPK1172PK1173&udm=2&biw=1366&bih=607&sxsrf=APpeQnuwhDcrbWCgjgzuhyUZtIq1_-IKsQ%3A1790931024001&ei=T3C_ap_SPLOokdUPw9DgwAk&oq=fa&gs_lp=Egtnd3Mtd2l6LWltZyICZmEqEAgAGIAEGIoFGEMYsQMYgwEyEBAAGIAEGIoFGEMYsQMYgwEyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyDRAAGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGENIxB5QoANY9hBwAngAkAEEmAGSAqAByQyqAQMyLTe4AQHIAQD4AQGYAgWgAscFqAIKwgIHECMYyQIYJ8ICBhAAGAcYHsICChAjGMkCGOoCGCfCAgUQABiABMICCBAAGIAEGLEDmAMMiAYBkgcFMi4wLjOgB5gosgcDMi0zuAenBcIHAzMtNcgHMoAIAQ&sclient=gws-wiz-img">
+        <img src="https://play-lh.googleusercontent.com/12KEJDhgk6oyE1VgmfCuFzFrQripZ_endElbvEhU1rZawQgV3RI-v3II8fDslI1sdC_WKBkmtxS3jxuIihk33Q" width="30">
+    </a>
+
+    <a href="https://www.google.com/search?q=whatsapp&sca_esv=e1de76b764c5d6d7&rlz=1C1VDKB_en-GBPK1172PK1173&udm=2&biw=1366&bih=607&sxsrf=APpeQnuJFGFiGQc5-aAuTY5TqXNz136rEg%3A1790931070961&ei=fnC_aqmbOu2GkdUPr--k6Qw&oq=wh&gs_lp=Egtnd3Mtd2l6LWltZyICd2gqEAgAGIAEGIoFGEMYsQMYgwEyEBAAGIAEGIoFGEMYsQMYgwEyChAAGIAEGIoFGEMyDRAAGIAEGIoFGEMYsQMyDRAAGIAEGIoFGEMYsQMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyChAAGIAEGIoFGEMyDRAAGIAEGIoFGEMYsQMyEBAAGIAEGIoFGEMYsQMYgwEyChAAGIAEGIoFGENI6SBQ6QJY_hBwAngAkAEEmAGwAqABpg2qAQUyLTYuMbgBAcgBAPgBAZgCBaAC-AaoAgrCAgcQIxjJAhgnwgIGEAAYBxgewgIIEAAYgAQYsQPCAgoQIxjJAhjqAhgnwgIFEAAYgASYAwqIBgGSBwcyLjAuMi4xoAeMKrIHBTItMi4xuAfjBsIHBTItMy4yyAcogAgB&sclient=gws-wiz-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl-1sxBe41lMDgiTZzstjrE2i0q5OcyqhLaLgOuYJvwA&s" width="30">
+    </a>
+
+    </div>
+
+    </footer>
+
+    </section>
+
+    
+    </main>
+    
+</body>
+</html>

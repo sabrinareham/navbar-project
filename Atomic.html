@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic-lite</title>
+
+    <style>
+        *{
+            margin: 0; padding: 0;
+            /* background-color: lightpink; */
+            box-sizing: border-box;
+            text-decoration: none;
+            border-style: none;
+            font-family: Arial, Helvetica, sans-serif; 
+
+        }
+
+        nav{
+            width: 100%; 
+            /* height: 100px; */
+            /* border: 1px solid black; */
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+
+        .pic1{
+            /* border: 3px solid black; */
+            width: 20%;
+            /* background-color: white; */
+            margin-top: 20px; margin-bottom:20px ;
+            padding-right: -100px;
+
+
+            align-items: center;
+            justify-content: center;
+            
+            
+
+
+        }
+
+        .pic2{
+            /* border: 3px solid black; */
+            width: 20%;
+            /* background-color: white; */
+            margin-top: 20px; margin-bottom:20px ;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tablediv{
+            width: 60%;
+            /* border: 1px dashed black; */
+            /* background-color: white; */
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        table{
+            margin-left: 200px;
+            margin-top: 20px; margin-bottom: 20px;
+        }
+
+        table td {
+            /* border: 1px solid black ;  */
+            /* background-color: white; */
+            padding: 20px 20px 20px 20px;
+            margin-left: 50px; 
+            
+        }
+
+        #t
+        {
+            color: red ;
+        }
+        #b{
+            
+
+        }
+
+        #c{
+            margin-left: 220px;
+        
+        }
+
+        #v{
+            color: black;
+        }
+
+        #w{
+            color: black;
+        }
+
+        .L{
+            height: 800px;  width: 100%;
+            padding-top: 300px;
+            /* border: 1px solid black; */
+            align-items: center;
+            justify-content: center;
+            /* background-color: rgb(213, 118, 175); */
+            /* background-image: url("https://static.vecteezy.com/system/resources/thumbnails/068/992/857/small/a-purple-and-white-background-with-a-white-background-photo.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; */
+            background: linear-gradient(135deg, #0f0f78, #FFFFFF);
+            /* background: linear-gradient(135deg, #B8A9E8, #FFFFFF); */
+             /* background: linear-gradient(135deg, #B8A9E8, #FFFFFF); */
+        }
+        #l{
+            
+            /* border: 1px dashed black; */
+            margin-top: -250px; 
+            /* margin-bottom: 150px; */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .M{
+            border: 1px solid black;
+            height: 150px ; width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 70px; 
+            /* padding-top: -40px; */
+            gap: 70px;
+            /* margin-bottom: 100px; */
+            /* background-color: darkslateblue; */
+            background-color: rgb(15, 36, 58);
+        }
+
+        #e{
+            /* border: 1px dashed black; */
+            height: 100px;
+            /* padding-top: 20px; padding-bottom: 20px;
+            padding-left: 20px; padding-right: 20px; */
+            padding: 50px 50px 50px 50px;
+            margin-top: 10px; margin-bottom: 100px;
+            margin-left: 30px;
+            height: fit-content;
+            text-align: justify;
+            white-space: nowrap;
+            /* align-items: center; */
+            color: white;
+
+        }
+        #f{
+            /* border: 1px dashed black; */
+            height: 100px;
+            /* padding: 100px 100px 100px 100px; */
+            padding: 20px 20px 20px 20px;
+           margin-top: 10px; margin-bottom: 100px;
+            height: fit-content;
+            text-align: justify;
+            color: white;
+
+        }
+        #g{
+            /* border: 1px dashed black; */
+            height: 100px;
+            /* padding: 100px 100px 100px 100px; */
+            padding: 20px 20px 20px 20px;
+            margin-top: 10px; margin-bottom: 100px;
+            height: fit-content;
+            text-align: justify;
+            color: white;
+
+
+        }
+        #h{
+            /* border: 1px dashed black; */
+            height: 100px;
+            /* padding: 100px 100px 100px 100px; */
+            padding: 20px 20px 20px 20px;
+            margin-top: 10px; margin-bottom: 100px;
+            margin-right: 20px;
+            height: fit-content;
+            color: white;
+
+        }
+        #f h2 span{
+            font-size: 10px;
+        }
+
+        #g h2 span{
+            font-size: 10px;
+        }
+
+        #h h2 span{
+            font-size: 10px;
+        }
+
+        .J{
+            /* border: 1px solid black; */
+            height: 300px; width: 100%;
+            background-color: whitesmoke;
+            display: flex; 
+            text-decoration: row;
+            gap: 90px;
+            /* padding-top: 100px; padding-bottom: 100px; */
+            /* margin-left: 10px; margin-right: 10px; */
+            gap: 40px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            
+        }
+
+        #k h2,#o h2,#s h2 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 8px;
+                          }
+
+        #para1 ,#para2, #para3 {
+           font-size: 10px;
+           line-height: 1.5;
+           color: #777;
+                       }
+
+        #j h1{
+            /* border: 1px dashed black; */
+            height: fit-content;
+            background-color: white;
+            padding-top: 20px; padding-bottom: 20px;
+            padding-left: 10px;
+            /* margin-bottom: 200px; */
+            margin-top: -30px;
+            /* border-radius: 20%; */
+            margin-left: 30px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        #k{
+            /* border: 1px dashed black; */
+            height: fit-content;
+            background-color: white;
+            padding-top: 20px; padding-bottom: 20px;
+            padding-left: 30px; padding-bottom: 30px;
+            /* border-radius: 20%; */
+
+        }
+
+        #o{
+            /* border: 1px dashed black; */
+            height: fit-content;
+            background-color: white;
+            padding-top: 20px; padding-bottom: 20px;
+           padding-left: 30px; padding-bottom: 30px;
+            /* border-radius: 20%; */
+
+        }
+
+        #s{
+            /* border: 1px dashed black; */
+            height: fit-content;
+            background-color: white;
+            padding-top: 20px; padding-bottom: 20px;
+            padding-left: 30px; padding-bottom: 30px;
+            /* border-radius: 20%; */
+            margin-right: 30px;
+
+        }
+        #pic3{
+            height: 25px;
+            width: 25px;
+
+        }
+
+        #pic4{
+            height: 25px;
+            width: 25px;
+        }
+
+        #pic5{
+
+            height: 25px;
+            width: 25px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="pic1">
+                <a href="#">
+                    <img src="https://img.magnific.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80" alt="" id="b"  height="50px">
+                </a>
+
+            </div>
+
+
+            <div class="tablediv" >
+                <table >
+                    <tr>
+                        <td><a href="#" id="t">Main Page</a></td>
+                        <td><a href="#" id="u"></a>Landing Page</td>
+                        <td><a href="#" id="v">Blog</a></td>
+                        <td><a href="#" id="w">System</a></td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+            <div class="pic2">
+                <a href="#">
+                    <img src="https://www.pixsector.com/cache/e7836840/av6584c34aabb39f00a10.png" alt="" id="c" height="50px">
+                </a>
+
+            </div>
+        </nav>
+
+        <section>
+            <div class="L">
+                <div id="l">
+                <p>
+                    <br>
+                    &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;|&nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;
+                    <br>
+                    <br>
+                    <center><h1>Atomic-Lite-Home</h1></center>
+                    <br>
+                    An atom is the smallest unit of an element that retains all the chemical properties of that element.
+                    <br>
+                    &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; consists of a nucleus containing protons and neutrons &nbsp; &nbsp; &nbsp; 
+                    <br>
+                    <br>
+                    &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;|&nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;
+                </p>
+                <br>
+                
+                </div>
+
+                <div class="M">
+                    <div id="e">
+                        <p>
+                            <center><h2>AT A Glance</h2></center>
+                        </p>
+                    </div>
+                    <div id="f">
+                        <p>
+                            <h2>3250 <span> Active Clients </span> </h2>
+                            
+                            
+                            Active clients means the customers who are currently using a company’s products or services.
+                            <br>
+                        </p>
+                    </div>
+                    <div id="g">
+                        <p>
+                            <h2>25 <span>Years experience</span></h2>
+                            
+                            
+                            Experience refers to a company or professional having 25 years of experience and expertise in their field.
+                            <br>
+                        </p>
+                    </div>
+
+
+                    <div id="h">
+                        <p>
+                            <h2>70 <span>Awards won</span></h2>
+                            
+                            
+                            Active clients means the customers who are currently using a company’s products or services.
+                            <br>
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <section>
+
+                    <div class="J">
+                        <div id="j">
+                            <h1>Atomic Headine</h1>
+                        </div>
+                        <div id="k">
+                            <a href="#">
+                                <img src="https://images.seeklogo.com/logo-png/25/1/diamond-logo-png_seeklogo-252380.png" alt="" id="pic3">
+                            </a>
+                            <h2>Atomic Feature</h2>
+                            <p id="para1">
+                                
+                                The atoms are the smallest particle , everything is made up of particle , containing small particles.
+                            </p>
+                        </div>
+                        <div id="o">
+
+                            <a href="#">
+                                <img src="https://images.seeklogo.com/logo-png/25/1/diamond-logo-png_seeklogo-252380.png" alt="" id="pic4">
+                            </a>
+                            <h2>Atomic Feature</h2>
+                            <p id="para2">
+                               
+                                The atoms are the smallest particle , everything is made up of particle , containing small particles.
+                            </p>
+                        </div>
+
+                        <div id="s">
+                            <a href="#">
+                                <img src="https://images.seeklogo.com/logo-png/25/1/diamond-logo-png_seeklogo-252380.png" alt="" id="pic5">
+                            </a>
+                            <h2>Atomic Feature</h2>
+                            <p id="para3">
+                             The atoms are the smallest particle, everything is made up of
+                            particle, containing small particles.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
